@@ -1,4 +1,4 @@
-# Birthday Blitz 🎂
+# Birthday Blitz
 
 Never forget a birthday again! Birthday Blitz is a Google Chrome extension that lets you quickly and easily add birthdays directly to your Google Calendar. 
 
