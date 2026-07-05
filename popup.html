@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Logged out view -->
+    <div id="loginUI" class="login-view">
+      <h2 class="login-title">Birthday Blitz</h2>
+      <p class="login-subtitle">Never forget a birthday again.</p>
+      <button id="loginBtn" class="btn-primary login-btn">Sign in with Google</button>
+    </div>
+
+    <!-- Logged in view -->
+    <div id="mainUI" style="display: none;">
+      <div class="header">
+        <h2>Birthday Blitz</h2>
+        <div class="calendar-group">
+          <input type="hidden" id="calendar" value="">
+          <div class="custom-select" id="customSelect">
+            <div class="custom-select-trigger" id="customSelectTrigger">
+              <span id="customSelectText">Select a Calendar</span>
+            </div>
+            <div class="custom-select-options" id="customSelectOptions">
+              <!-- populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="name">Name</label>
+        <div class="name-input-wrapper">
+          <input type="text" id="name" placeholder="e.g., Jane Doe">
+          <div class="fake-preview" aria-hidden="true"><span id="fakeName"></span><span id="suffixSpan" class="suffix">'s Birthday</span></div>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="date">Birthdate</label>
+        <div class="date-row">
+          <!-- Back to the native date picker for now -->
+          <input type="date" id="date">
+          <button id="todayBtn" class="btn-secondary">Today</button>
+        </div>
+      </div>
+
+      <button id="submitBtn" class="btn-primary">Add to Calendar</button>
+      <div id="successMsg" class="success-msg"></div>
+      
+      <div class="account-footer">
+        <div id="accountInfo" class="account-info"></div>
+        <button id="logoutBtn" class="btn-logout">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
