@@ -5,15 +5,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #e2e8f0; /* more distinct casual light slate */
+  background-color: #0f2a4a; /* Medium Navy */
   color: #111827;
 }
 
 .container {
   padding: 24px;
-  background: white;
+  background: #ffffff; /* Clean white card */
   border-radius: 20px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   margin: 12px;
 }
 
@@ -31,6 +31,19 @@ body {
   font-weight: 800;
   color: #111827; /* clear, dark text */
   letter-spacing: -0.01em;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .input-group {
@@ -212,20 +225,22 @@ button {
 .btn-primary {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); /* actionable, trustworthy blue */
-  color: white;
+  background: #eab308; /* Darker yellow */
+  color: #0f2a4a; /* Navy text */
   margin-top: 8px;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 4px 14px rgba(234, 179, 8, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+  background: #facc15; /* Lighter yellow on hover */
+  box-shadow: 0 6px 20px rgba(234, 179, 8, 0.4);
 }
 
 .btn-primary:active {
   transform: translateY(1px);
-  box-shadow: 0 2px 10px rgba(37, 99, 235, 0.25);
+  background: #ca8a04; /* Even darker on click */
+  box-shadow: 0 2px 10px rgba(234, 179, 8, 0.25);
 }
 
 .btn-primary:disabled {
@@ -266,8 +281,13 @@ button {
   padding: 40px 20px;
 }
 
+.login-title-wrapper {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
 .login-title {
-  margin: 0 0 12px 0;
+  margin: 0;
   font-family: 'Nunito', sans-serif;
   font-size: 28px;
   font-weight: 800;

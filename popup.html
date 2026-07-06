@@ -10,7 +10,10 @@
   <div class="container">
     <!-- Logged out view -->
     <div id="loginUI" class="login-view">
-      <h2 class="login-title">Birthday Blitz</h2>
+      <div class="title-wrapper login-title-wrapper">
+        <img src="birthdayblitz.png" class="header-logo" alt="Logo">
+        <h2 class="login-title">Birthday Blitz</h2>
+      </div>
       <p class="login-subtitle">Never forget a birthday again.</p>
       <button id="loginBtn" class="btn-primary login-btn">Sign in with Google</button>
     </div>
@@ -18,7 +21,10 @@
     <!-- Logged in view -->
     <div id="mainUI" style="display: none;">
       <div class="header">
-        <h2>Birthday Blitz</h2>
+        <div class="title-wrapper">
+          <img src="birthdayblitz.png" class="header-logo" alt="Logo">
+          <h2>Birthday Blitz</h2>
+        </div>
         <div class="calendar-group">
           <input type="hidden" id="calendar" value="">
           <div class="custom-select" id="customSelect">

@@ -2,8 +2,18 @@
   "manifest_version": 3,
   "name": "Birthday Blitz",
   "version": "1.0",
+  "icons": {
+    "16": "birthdayblitz.png",
+    "48": "birthdayblitz.png",
+    "128": "birthdayblitz.png"
+  },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "birthdayblitz.png",
+      "48": "birthdayblitz.png",
+      "128": "birthdayblitz.png"
+    }
   },
   "permissions": ["identity", "storage"],
   "oauth2": {
