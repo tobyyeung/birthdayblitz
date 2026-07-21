@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Birthday Blitz",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "16": "birthdayblitz.png",
     "48": "birthdayblitz.png",
@@ -15,7 +15,10 @@
       "128": "birthdayblitz.png"
     }
   },
-  "permissions": ["identity", "storage"],
+  "permissions": [
+    "identity",
+    "storage"
+  ],
   "oauth2": {
     "client_id": "587050120733-it7mlrciombib6ek00regasqv4s6l9qo.apps.googleusercontent.com",
     "scopes": [

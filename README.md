@@ -9,6 +9,15 @@ Never forget a birthday again! Birthday Blitz is a Google Chrome extension that 
 - **Calendar Selection:** Choose exactly which of your Google Calendars you want to add the birthday to.
 - **Automatic Formatting:** Automatically formats the event as "[Name]'s Birthday".
 
+## Privacy & Security
+
+Birthday Blitz takes user privacy and data security seriously:
+- **Google User Data Usage:** Google API data is used strictly to retrieve your available calendar names and create requested birthday events.
+- **Data Protection:** All communications with Google APIs use HTTPS/TLS encryption. Authentication uses OAuth 2.0 without ever accessing or storing passwords.
+- **Retention & Deletion:** User data is not stored on external servers. Logging out revokes access tokens and clears local state immediately.
+
+For full details, view our [Privacy Policy](PRIVACY_POLICY.md) (or online at [privacy.html](privacy.html)).
+
 ## Installation
 
 Since this is an unpacked extension, you can install it locally in Google Chrome for testing:
